@@ -24,9 +24,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react-hooks'],
   rules: {
+    '@typescript-eslint/no-empty-interface': 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'import/prefer-default-export': 0,
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
